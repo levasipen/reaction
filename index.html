@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Reaction Test</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://jsdelivr.net"></script>
 </head>
 <body>
 
@@ -12,11 +12,21 @@
 <div class="box" id="auth-screen">
   <h2>Login / Register</h2>
   <div id="auth-msg" style="color:#ffcc00; font-size:12px; margin-bottom:10px;"></div>
-  <input type="text" id="auth-nick" placeholder="Nickname"><br>
-  <input type="email" id="auth-email" placeholder="Email"><br>
-  <input type="password" id="auth-pass" placeholder="Password"><br><br>
-  <button onclick="accountAction('reg')">Register</button>
-  <button onclick="accountAction('login')" style="background:#00e1ff;">Login</button>
+  
+  <div id="credentials-inputs">
+    <input type="text" id="auth-nick" placeholder="Nickname"><br>
+    <input type="email" id="auth-email" placeholder="Email"><br>
+    <input type="password" id="auth-pass" placeholder="Password"><br><br>
+    <button onclick="accountAction('reg')">Register</button>
+    <button onclick="accountAction('login')" style="background:#00e1ff;">Login</button>
+  </div>
+
+  <!-- NEW OTP BOX -->
+  <div id="otp-inputs" style="display:none; margin-top:10px;">
+    <p style="font-size:12px; color:#aaa;">Enter the 6-digit code sent to your email:</p>
+    <input type="text" id="auth-otp" placeholder="6-Digit Code" maxlength="6"><br><br>
+    <button onclick="verifyOTPCode()" style="background:#00ff88;">Verify Code</button>
+  </div>
 </div>
 
 <!-- GAME MAIN WINDOW -->

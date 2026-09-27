@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  background: #121214;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  user-select: none;
+}
+.box {
+  text-align: center;
+  background: #1e1e24;
+  padding: 15px;
+  border-radius: 16px;
+  max-width: 450px;
+  width: 95%;
+  box-sizing: border-box;
+  position: relative;
+}
+.modes, .lb-tabs {
+  margin-bottom: 10px;
+  background: #151518;
+  padding: 6px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+label, .tab-btn {
+  margin: 2px 4px;
+  font-size: 11px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #aaa;
+}
+.tab-btn.active {
+  color: #00ff88;
+  font-weight: bold;
+}
+.info {
+  color: #aaa;
+  margin-bottom: 10px;
+  font-size: 12px;
+  min-height: 35px;
+}
+#zone {
+  height: 200px;
+  background: #151518;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#target {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+}
+#msg {
+  line-height: 200px;
+  color: #888;
+}
+#err {
+  color: #ff4444;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  width: 100%;
+  line-height: 200px;
+  display: none;
+}
+button {
+  background: #00ff88;
+  color: #121214;
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  background: #252530;
+  border: 2px solid #00ff88;
+  border-radius: 12px;
+  padding: 15px;
+  z-index: 100;
+}
+.modal input {
+  background: #121214;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 6px;
+  margin: 5px 0;
+  width: 80%;
+  border-radius: 4px;
+}
+.leaderboard {
+  margin-top: 15px;
+  background: #151518;
+  border-radius: 8px;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.lb-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #222;
+  align-items: center;
+}
+.three-dots {
+  cursor: pointer;
+  color: #00e1ff;
+  padding: 0 5px;
+}
+#auth-screen { display: block; }
+#game-screen { display: none; }
+style.css
